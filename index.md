@@ -8,7 +8,7 @@ title: 《雅思词汇》小抄
 
 词根、词缀
 
-<img src="images/hjkl.png" alt="The four directions in Vim, keys h, j, k, and l."/>
+<img src="images/vocabulary" alt="the cover of book"/>
 
 ## Word List 1
 * `sorb` - 吸收
