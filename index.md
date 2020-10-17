@@ -1,13 +1,13 @@
 ---
 layout: default
-title: A Great Vim Cheat Sheet
+title: Vim 小抄
 ---
 
 
-# A Great Vim Cheat Sheet
+# Vim 小抄
 
 
-Note: If you’re decent at Vim and want your mind blown, check out [Advanced Vim](advanced.html).
+注意: If you’re decent at Vim and want your mind blown, check out [Advanced Vim](advanced.html).
 
 I’ve compiled a list of *essential* Vim commands that I use every day. I have then given a few instructions on how to make Vim as great as it should be, because it’s painful without configuration.
 
