@@ -3,7 +3,7 @@ layout: default
 title: 《雅思词汇》小抄
 ---
 
-Note: If you’re decent at Vim and want your mind blown, check out [Advanced Vim](ielts100.html).
+坚持每天完成一句默写 [100个句子记完7000个雅思词汇](ielts100.html)，助力写作。
 
 # 《雅思词汇》小抄
 
