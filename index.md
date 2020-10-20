@@ -3,6 +3,7 @@ layout: default
 title: 《雅思词汇》小抄
 ---
 
+Note: If you’re decent at Vim and want your mind blown, check out [Advanced Vim](ielts100.html).
 
 # 《雅思词汇》小抄
 
