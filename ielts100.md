@@ -12,4 +12,4 @@ I’ve compiled a list of *essential* Vim commands that I use every day. I have 
 
 ## Sentence 01
 
-* There is considerable debate over how we shold react if we detact a signal from an alien civilisation.
+### There is considerable debate over how we shold react if we detact a signal from an alien civilisation.
