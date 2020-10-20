@@ -3,7 +3,7 @@ layout: default
 title: 《雅思词汇》小抄
 ---
 
-坚持每天完成一句默写 [100个句子记完7000个雅思词汇](ielts-silent-writing.html)，助力写作。
+[默写提示](ielts-silent-writing.html)，每天更新。
 
 # 《雅思词汇》小抄
 
