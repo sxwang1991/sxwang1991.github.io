@@ -3,7 +3,7 @@ layout: default
 title: 100个句子记完7000个雅思词汇
 ---
 
-[主页](index.html)
+[返回主页](index.html)
 
 # 100个句子记完7000个雅思词汇
 
@@ -16,5 +16,3 @@ title: 100个句子记完7000个雅思词汇
 
 ### abc
 
-
-[主页](index.html)
