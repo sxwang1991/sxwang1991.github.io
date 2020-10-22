@@ -14,5 +14,5 @@ title: 100个句子记完7000个雅思词汇
 
 ## 2020-10-21
 
-### abc
+### The two world wars, which interrupted the raw material from Japan, also stifled the European silk industry. 
 
