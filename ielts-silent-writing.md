@@ -27,3 +27,42 @@ title: 100个句子记完7000个雅思词汇
 * 前一个分句的主干是 `** is **`
 * 后一个分句的主干是 `** define **`
 * 现在分词短语 `v+ing ***` 作伴随状语，其中`what`引导宾语从句；还有一个省略了`that`的定语从句
+
+
+## 2020-10-23
+
+### 004 一种方式是组织后台参观，这样人们就可以参观建筑，了解剧院是如何运作的。
+* 本句是一个由`and`连接的并列句，其中表示结果
+* 前一个分句的主干是 `One way is by organising backstage tour`
+* 后一个分句的主干是 `people can be shown round the building and learn ...`
+* `how`引导的宾语从句作`learn`的宾语
+
+
+## 2020-10-24
+
+### 005 我担心会发生的是，书和杂志都会消失，剩下的只有一排排电脑。
+* 本句的主干是`What I'm afraid will happen is that ...`
+* 其中`what`引导一个主语从句
+* `I'm afraid`作插入语，表明说话者的态度
+* `that`引导表语从句`books and magazine ... row of computers`
+
+
+## 2020-10-25
+
+### 006 这个心理实验室坚决声明拥有合法性并唤起了在那里参与实验室的人们的信任和信心。
+
+* 本句的主干是`The psychological laboratory has a strong claim to legitimacy and evokes trust and confidence`
+* `who`引导定语从句修饰`those`
+* 第一个`and`连接了两个谓语动词 `has`和`evokes`，构成并列谓语
+
+
+## 2020-10-26
+
+### 007 迁徙是一个复杂的问题，生物学家对它有不同的定义，部分取决于他们研究的动物种类。
+* 本句的主干是`The displays of art museums serve as a warning`
+* 句中`what`引导的宾语从句作`of`的宾语，`of + 宾语从句`一起修饰`a warning`
+*  `when`在此处引导时间状语从句
+
+
+
+
