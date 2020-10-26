@@ -6,6 +6,8 @@ title: 100个句子记完7000个雅思词汇
 [返回主页](index.html)
 
 # 2017年考试英语试题
+
+http://busnc.com/down/kaobo/e2001jiaoda.htm
          
 ## Part II[. Vocabulary (20%)	,
 * Directions: 
