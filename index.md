@@ -23,7 +23,5 @@ title: 《雅思词汇》学习
 
 ## 题目分析
 
-[en2017](english2017.html)
-
-[enligh2017](en/enlish2017.html)
+[上海交大2001年春季英语考博题](en/enlish2017.html)
 
