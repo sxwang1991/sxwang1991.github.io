@@ -11,7 +11,7 @@ title: 《雅思词汇》学习
 ## 默写提示
 
 [默写提示](ielts-silent-writing.html)，每天更新。
-[en2017](en/english2017.html)
+
 
 ## 默写记录
     
