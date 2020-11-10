@@ -4,7 +4,7 @@ title: 《雅思词汇》学习
 ---
 
 
-# 《雅思词汇》学习为期48天，今天是第11天
+# 《雅思词汇》学习为期48天，今天是第26天
 
 <img src="images/ielts_vocabulary.jpg" alt="the cover of book"/>
 
