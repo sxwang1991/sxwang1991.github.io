@@ -28,5 +28,5 @@ title: 《雅思词汇》学习
 
 ## 新视野英语
 
-[book1](new-horizon/book1.html)
+[第1册](new-horizon/book1.html)
 
