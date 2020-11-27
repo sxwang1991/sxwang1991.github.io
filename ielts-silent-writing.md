@@ -65,15 +65,29 @@ title: 100个句子记完7000个雅思词汇
 
 ## 2020-10-27
 
-### 008  。
-* 
-*  
+### 008 垂直农业试图解决我们在为不断增长的人口生产足够粮食时所面临的不容质疑的问题。
+* 本句的主干是`Vertical farming is an attemple`
+* 不定式 `to address the undoubted problems` 作后置定语修饰 `an attempt`
+* 由 `that` 引导的定语从句修饰 `problems`
+* `vertical`  a vertical line 
+* `attempt` make attempt, try
+* `address` 
+* `undoubted`  undoubtedly
+* `face` face the challenge
+* `produce` generate, manufacture
 
 ## 2020-10-28
 
-### 009  。
-* 
-*  
+### 009 然而，直到公元前1500年，第一个中空玻璃器才通过用一层熔融玻璃覆盖砂芯制成 。
+* 本句使用的是 `not until` 的强调句型
+* 其结构是 `It was not until + 时间 + that ...` , 译为`直到...时候才...` 
+* `hollow`  
+* `container` 
+* `contain`  contain oneself
+* `cover`  
+* `core` 
+* `layer` 
+* `molten` molten lava
 
 ## 2020-10-29
 
