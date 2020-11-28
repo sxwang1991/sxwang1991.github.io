@@ -91,9 +91,18 @@ title: 100个句子记完7000个雅思词汇
 
 ## 2020-10-29
 
-### 010  。
-* 
-*  
+### 010 许多理论家认为理想的老板应该在后方指挥，以集体成就为荣，并给予员工应得的荣誉  。
+* 本句的主干是 `Many theorists believe ...`
+* `believe` 后面 跟了一个省略 `that` 的宾语从句
+* 句末的 `逗号 + 现在分词短语` 形式作伴随状语
+* 表示和主句的动作 `lead from behind` 同时进行
+* `where` 引导地点状语从句，修饰 `giving`
+* `theorist`
+* `ideal` an ideal companion
+* `pride`
+* `collective`
+* `accomplishment`
+* `credit` credit facility
 
 ## 2020-10-30
 
