@@ -69,25 +69,14 @@ title: 100个句子记完7000个雅思词汇
 * 本句的主干是`Vertical farming is an attemple`
 * 不定式 `to address the undoubted problems` 作后置定语修饰 `an attempt`
 * 由 `that` 引导的定语从句修饰 `problems`
-* `vertical`  a vertical line 
-* `attempt` make attempt, try
-* `address` 
-* `undoubted`  undoubtedly
-* `face` face the challenge
-* `produce` generate, manufacture
+
 
 ## 2020-10-28
 
 ### 009 然而，直到公元前1500年，第一个中空玻璃器才通过用一层熔融玻璃覆盖砂芯制成 。
 * 本句使用的是 `not until` 的强调句型
 * 其结构是 `It was not until + 时间 + that ...` , 译为`直到...时候才...` 
-* `hollow`  
-* `container` 
-* `contain`  contain oneself
-* `cover`  
-* `core` 
-* `layer` 
-* `molten` molten lava
+
 
 ## 2020-10-29
 
@@ -96,45 +85,46 @@ title: 100个句子记完7000个雅思词汇
 * `believe` 后面 跟了一个省略 `that` 的宾语从句
 * 句末的 `逗号 + 现在分词短语` 形式作伴随状语
 * 表示和主句的动作 `lead from behind` 同时进行
-* `where` 引导地点状语从句，修饰 `giving`
-* `theorist`
-* `ideal` an ideal companion
-* `pride`
-* `collective`
-* `accomplishment`
-* `credit` credit facility
+
 
 ## 2020-10-30
 
-### 010  。
-* 
-*  
+### 011 虽然 我们可能认为电影本质上是一种视觉体验，但我们真的能低估电影声音的重要性。
+* 本句中 `though`引导让步状语从句，
+* 从句的主干是`we might think of film as an example,` 
+* 主句的主干是`we cannot afford to underestimate the importance`
+
+
 
 ## 2020-11-01
 
-### 011  。
-* 
-* 
+### 012 就货物运输而言，其增长在很大程度上是由欧洲经济以其生产体系的变化造成的。 
+* 本句的主干是`growth is due to changes` 
+* 就···而言 对···来说`As far as ... is concerned`引出个人观点与看法
+* 在很大程度上`to a large extent`
 
 ## 2020-11-01
 
-### 011  。
-* 
-*  
-
+### 013 为了在白天记录日光时，发明家创造了靠阳光影子的长度和方向来指示时间的日晷。
+* 本句的主干是`inventors created sundials` 
+* 句首`In order to`引导目的状语从句
+* 句中`which`引导非限制性定语从句，修饰先行词`sundials`
 
 ## 2020-11-02
 
-### 012  。
-* 
-*  
-
+### 014 李·霍尔对火灾发生的次数和种子发芽的比例进行了对比和数字分析,他的分析非常详尽--令人印象深刻。
+* 本句的主干是`Lee Hall's analysis of figures was done a in lot of detail` 
+* 现在分词`comparing the times of the fires and the proportion of seed that germinated`
+* 作`analysis of figures`的后置定语，
+* 其中定语从句修饰`seed`
+* 破折号后面的`very impressive`起到补充说明作用
 
 ## 2020-11-03
 
-### 013  。
+### 015 如果狩猎和诱捕受到气候变化的限制，因纽特人可能实际上也不会被挨饿，但这肯定会对他们的健康产生影响 。
+* 本句的主干是`there has certainlhy been an impact on people's health` 
+* `While` 引导让步状语从句，
 * 
-*  
 
 
 ## 2020-11-04
