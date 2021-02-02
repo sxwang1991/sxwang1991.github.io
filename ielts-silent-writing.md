@@ -5,6 +5,8 @@ title: 100个句子记完7000个雅思词汇
 
 [返回主页](index.html)
 
+<iframe width="600" height="400" style="max-width:100%" src="https://cn.mathigon.org/polypad/ItctqoeCo3WUgg" frameorder="0" allowfullscreen></iframe>
+
 # 100个句子记完7000个雅思词汇
 
 ## 2020-10-20
