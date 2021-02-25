@@ -30,3 +30,6 @@ title: 《雅思词汇》学习
 
 [Polypad](polypad.html)
 
+## VOA60
+
+[voa60](learningenglish-voanews.html)
