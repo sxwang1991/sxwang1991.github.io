@@ -23,14 +23,21 @@ title: 《雅思词汇》学习
 
 ## 中翻英4
 
-[中庸思想](zh2en4/zh2en01.html)
-[四大名著](zh2en4/zh2en02.html)
-[互联网经济](zh2en4/zh2en03.html)
-[苏州园林](zh2en4/zh2en04.html)
-[中国文化](zh2en4/zh2en05.html)
-[博鳌亚洲论坛](zh2en4/zh2en06.html)
-[城乡一体化](zh2en4/zh2en07.html)
-[社会实践](zh2en4/zh2en08.html)
+* [中庸思想](zh2en01.html)
+
+* [四大名著](zh2en02.html)
+
+* [互联网经济](zh2en03.html)
+
+* [苏州园林](zh2en04.html)
+
+* [中国文化](zh2en05.html)
+
+* [博鳌亚洲论坛](zh2en06.html)
+
+* [城乡一体化](zh2en07.html)
+
+* [社会实践](zh2en08.html)
 
 
 ## Polypad
