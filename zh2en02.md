@@ -10,9 +10,9 @@ title: 汉翻英
 ## 2021-3-6
 
 ### ① 中国的四大名著是指《三国演义》、《水浒传》、《西游记》和《红楼梦》四部著名小说。
-### The four great classical Chinese novels include `Romance of the Three Kingdoms`, `Outlaw of the Marsh`, `Journey to the West` and `A Dream of Rea Mansions`.
+### The four great classical Chinese novels include _Romance of the Three Kingdoms_, _Outlaw of the Marsh_, _Journey to the West_ and _A Dream of Rea Mansions_.
 
-###② 它们的创作时间均处于元末明初至清代期间，其内容反映了中国古代的政治和军事斗争、社会矛盾、文化信仰等各个方面。
+### ② 它们的创作时间均处于元末明初至清代期间，其内容反映了中国古代的政治和军事斗争、社会矛盾、文化信仰等各个方面。
 ### The time when they were composed was during the period from the late Yuan and early Ming dynasties to the Qing dynasty.
 ### The contents of the novels all reflect various aspects of ancient China such as the political and military strife, social conflicts and cultural beliefs.
 
