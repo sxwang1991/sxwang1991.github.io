@@ -21,7 +21,7 @@ title: 《雅思词汇》学习
 
 《雅思词汇》[词根&词缀学习](ielts-root.html).
 
-## 中翻英4
+## 中翻英
 
 * [中庸思想](zh2en01.html)
 
@@ -47,3 +47,21 @@ title: 《雅思词汇》学习
 ## VOA60
 
 [voa60](learningenglish-voanews.html)
+
+## 经济学人学写作
+
+* [中庸思想](TE01.html)
+
+* [四大名著](TE02.html)
+
+* [互联网经济](TE03.html)
+
+* [苏州园林](TE04.html)
+
+* [中国文化](TE05.html)
+
+* [博鳌亚洲论坛](TE06.html)
+
+* [城乡一体化](TE07.html)
+
+* [社会实践](TE08.html)
