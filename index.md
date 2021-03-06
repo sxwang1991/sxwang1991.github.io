@@ -21,9 +21,16 @@ title: 《雅思词汇》学习
 
 《雅思词汇》[词根&词缀学习](ielts-root.html).
 
-## 题目分析
+## 中翻英4
 
-[上海交大2001年春季英语考博题](en/enlish2017.html)
+[中庸思想](zh2en4/zh2en01.html)
+[四大名著](zh2en4/zh2en02.html)
+[互联网经济](zh2en4/zh2en03.html)
+[苏州园林](zh2en4/zh2en04.html)
+[中国文化](zh2en4/zh2en05.html)
+[博鳌亚洲论坛](zh2en4/zh2en06.html)
+[城乡一体化](zh2en4/zh2en07.html)
+[社会实践](zh2en4/zh2en08.html)
 
 
 ## Polypad
