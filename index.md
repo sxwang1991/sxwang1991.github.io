@@ -1,10 +1,10 @@
 ---
 layout: default
-title: skfem
+title: 《雅思词汇》学习
 ---
 
 
-# skfem
+# 《雅思词汇》学习为期48天，今天是第26天
 
 <img src="images/ielts_vocabulary.jpg" alt="the cover of book"/>
 
@@ -65,3 +65,13 @@ title: skfem
 * [城乡一体化](TE07.html)
 
 * [社会实践](TE08.html)
+
+## skfem
+
+* [有限元方法编程](skfem/skfem01.html)
+
+## shenfun
+
+* [谱方法编程](shenfun/shenfun01.html)
+
+
