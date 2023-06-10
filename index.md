@@ -50,7 +50,7 @@ title: 《雅思词汇》学习
 
 [voa60](learningenglish-voanews.html)
 
-[voa60-2023](voa60-2023.html)
+[voa60-2023](voa2023.html)
 
 ## 经济学人学写作
 
