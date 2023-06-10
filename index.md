@@ -44,8 +44,6 @@ title: 《雅思词汇》学习
 
 [关雎](poem-001.html)
 
-[关雎](Poem/poem-001.html)
-
 ## VOA60
 
 [voa60](learningenglish-voanews.html)
