@@ -50,6 +50,8 @@ title: 《雅思词汇》学习
 
 [voa60](learningenglish-voanews.html)
 
+[voa60-2023](voa60-2023.html)
+
 ## 经济学人学写作
 
 * [陷入不确定性,衍生于,借助,被定性](TheEconomist/TE01.html)
