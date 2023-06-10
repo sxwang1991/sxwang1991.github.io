@@ -40,9 +40,9 @@ title: 《雅思词汇》学习
 * [社会实践](zh2en/zh2en08.html)
 
 
-## Polypad
+## 诗词名篇
 
-[Polypad](polypad.html)
+[关雎](poem-001.html)
 
 ## VOA60
 
