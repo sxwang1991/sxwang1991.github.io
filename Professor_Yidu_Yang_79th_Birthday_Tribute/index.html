@@ -279,103 +279,19 @@
       font-size: clamp(1.08rem, 2vw, 1.28rem);
       line-height: 1.9;
     }
-    .guestbook-form { display: grid; gap: 1.15rem; }
-    .form-field { display: grid; gap: .48rem; }
-    .form-field label {
-      color: #193f5e;
-      font-weight: 700;
-      font-size: .93rem;
-    }
-    .form-field input,
-    .form-field textarea {
-      width: 100%;
-      border: 1px solid #b8d1e1;
-      border-radius: 9px;
-      padding: .78rem .9rem;
-      color: var(--ink);
-      background: white;
-      font: inherit;
-      line-height: 1.55;
-      transition: border-color .18s ease, box-shadow .18s ease;
-    }
-    .form-field textarea { min-height: 130px; resize: vertical; }
-    .form-field input:focus,
-    .form-field textarea:focus {
-      outline: none;
-      border-color: var(--blue-600);
-      box-shadow: 0 0 0 3px rgba(8, 116, 201, .14);
-    }
-    .guestbook-actions {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    .guestbook-submit {
-      cursor: pointer;
-      border: 0;
-      border-radius: 999px;
-      padding: .72rem 1.35rem;
-      color: white;
-      background: var(--blue-700);
-      font-weight: 700;
-      box-shadow: 0 8px 20px rgba(7, 88, 158, .2);
-    }
-    .guestbook-submit:hover { background: var(--blue-600); }
     .guestbook-note {
-      margin: 0;
-      color: var(--muted);
-      font-size: .82rem;
-      line-height: 1.55;
-    }
-    .guestbook-messages {
-      display: grid;
-      gap: 1rem;
-      margin-top: 2.25rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--rule);
-    }
-    .guestbook-empty {
-      margin: 0;
-      padding: 1.25rem;
-      color: var(--muted);
-      text-align: center;
-      background: var(--blue-050);
+      margin: 0 0 1.35rem;
+      padding: .95rem 1rem;
+      border: 1px solid #d4e5ef;
       border-radius: 9px;
+      color: var(--muted);
+      background: var(--blue-050);
+      font-size: .88rem;
+      line-height: 1.7;
     }
-    .guestbook-entry {
-      padding: 1.15rem 1.25rem;
-      border: 1px solid var(--rule);
-      border-radius: 10px;
-      background: #fbfdff;
-    }
-    .guestbook-entry-footer {
-      display: flex;
-      align-items: baseline;
-      justify-content: flex-end;
-      gap: .65rem;
-      margin-top: .8rem;
-    }
-    .guestbook-entry-name { color: var(--blue-900); font-weight: 750; }
-    .guestbook-entry-time { color: var(--muted); font-size: .78rem; }
-    .guestbook-entry-message {
-      margin: 0;
-      white-space: pre-wrap;
-      overflow-wrap: anywhere;
-    }
-    .guestbook-delete {
-      cursor: pointer;
-      margin: 0 auto 0 0;
-      padding: .22rem 0;
-      border: 0;
-      color: #667d8f;
-      background: transparent;
-      font-size: .78rem;
-      text-decoration: underline;
-      text-underline-offset: .2em;
-    }
-    .guestbook-delete:hover { color: #a02b2b; }
+    .giscus,
+    .giscus-frame { width: 100%; }
+    .giscus-frame { border: 0; }
 
     .lang-zh, .lang-en { display: none; }
     body[data-lang="en"] .lang-en { display: revert; }
@@ -410,9 +326,7 @@
       .guestbook { padding: 3.5rem 0 4rem; }
       .guestbook-card { padding: 1.2rem; border-radius: 11px; }
       .dedication { padding: 1.2rem 1.1rem 1.2rem 1.3rem; }
-      .guestbook-actions { align-items: stretch; }
-      .guestbook-submit { width: 100%; }
-      .guestbook-entry-footer { flex-wrap: wrap; gap: .35rem .65rem; }
+      .guestbook-note { padding: .85rem .9rem; }
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
     @media print {
@@ -431,8 +345,7 @@
       .paper { break-inside: avoid; }
       .guestbook { padding: 1.5rem 0; background: white; }
       .guestbook-card { border: 0; box-shadow: none; padding: 0; }
-      .guestbook-form, .guestbook-note, .guestbook-delete { display: none !important; }
-      .guestbook-entry { break-inside: avoid; }
+      .guestbook-note, .giscus { display: none !important; }
     }
   </style>
 </head>
@@ -632,34 +545,29 @@
           <span class="lang-en" lang="en">Guestbook</span>
         </h2>
         <div class="guestbook-card">
-          <form class="guestbook-form" id="guestbook-form">
-            <div class="form-field">
-              <label for="guestbook-message">
-                <span class="lang-zh" lang="zh-CN">留言</span>
-                <span class="lang-en" lang="en">Message</span>
-              </label>
-              <textarea id="guestbook-message" name="message" maxlength="600" required data-placeholder-en="Write your birthday wishes here…" data-placeholder-zh="请在这里写下您的生日祝福……"></textarea>
-            </div>
-            <div class="form-field">
-              <label for="guestbook-name">
-                <span class="lang-zh" lang="zh-CN">姓名（选填）</span>
-                <span class="lang-en" lang="en">Name (optional)</span>
-              </label>
-              <input id="guestbook-name" name="name" type="text" maxlength="60" autocomplete="name" data-placeholder-en="Your name" data-placeholder-zh="您的姓名">
-            </div>
-            <div class="guestbook-actions">
-              <button class="guestbook-submit" type="submit">
-                <span class="lang-zh" lang="zh-CN">提交留言</span>
-                <span class="lang-en" lang="en">Post Message</span>
-              </button>
-              <p class="guestbook-note">
-                <span class="lang-zh" lang="zh-CN">离线说明：留言仅保存在当前浏览器中，不会上传网络。</span>
-                <span class="lang-en" lang="en">Offline note: Messages are stored only in this browser and are not uploaded.</span>
-              </p>
-            </div>
-          </form>
+          <p class="guestbook-note">
+            <span class="lang-zh" lang="zh-CN">留言由 giscus 和 GitHub Discussions 提供。发表评论需要登录 GitHub；如需显示真实姓名，请在留言末尾署名。</span>
+            <span class="lang-en" lang="en">Comments are provided through giscus and GitHub Discussions. A GitHub account is required to post. If you wish to display your real name, please sign your message.</span>
+          </p>
 
-          <div class="guestbook-messages" id="guestbook-messages" aria-live="polite"></div>
+          <div class="giscus"></div>
+          <script src="https://giscus.app/client.js"
+                  data-repo="sxwang1991/sxwang1991.github.io"
+                  data-repo-id="MDEwOlJlcG9zaXRvcnkzMDQ3NjQxODA="
+                  data-category="Announcements"
+                  data-category-id="DIC_kwDOEipVFM4DFvKD"
+                  data-mapping="specific"
+                  data-term="Professor Yidu Yang – 79th Birthday Guestbook"
+                  data-strict="1"
+                  data-reactions-enabled="1"
+                  data-emit-metadata="0"
+                  data-input-position="top"
+                  data-theme="light"
+                  data-lang="en"
+                  data-loading="lazy"
+                  crossorigin="anonymous"
+                  async>
+          </script>
         </div>
       </div>
     </section>
@@ -667,91 +575,31 @@
 
   <script>
     (() => {
-      const STORAGE_KEY = 'yidu-yang-79-guestbook-v1';
       const buttons = Array.from(document.querySelectorAll('[data-language]'));
-      const form = document.getElementById('guestbook-form');
-      const nameInput = document.getElementById('guestbook-name');
-      const messageInput = document.getElementById('guestbook-message');
-      const messagesContainer = document.getElementById('guestbook-messages');
 
-      const loadMessages = () => {
-        try {
-          const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
-          return Array.isArray(stored) ? stored : [];
-        } catch (error) {
-          return [];
-        }
-      };
+      const syncGiscusLanguage = (language, attempts = 20) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
 
-      let messages = loadMessages();
-
-      const saveMessages = () => {
-        try {
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(messages));
-        } catch (error) {
-          // The guestbook still works for the current page session if storage is unavailable.
-        }
-      };
-
-      const currentLanguage = () => document.body.dataset.lang === 'zh' ? 'zh' : 'en';
-
-      const renderMessages = () => {
-        const language = currentLanguage();
-        messagesContainer.replaceChildren();
-
-        if (messages.length === 0) {
-          const empty = document.createElement('p');
-          empty.className = 'guestbook-empty';
-          empty.lang = language === 'zh' ? 'zh-CN' : 'en';
-          empty.textContent = language === 'zh'
-            ? '尚无留言，期待您的祝福。'
-            : 'No messages yet—your wishes are welcome.';
-          messagesContainer.append(empty);
+        if (!iframe || !iframe.contentWindow) {
+          if (attempts > 0) {
+            window.setTimeout(
+              () => syncGiscusLanguage(language, attempts - 1),
+              250
+            );
+          }
           return;
         }
 
-        messages.forEach((entry) => {
-          const article = document.createElement('article');
-          article.className = 'guestbook-entry';
-
-          const footer = document.createElement('div');
-          footer.className = 'guestbook-entry-footer';
-
-          const name = document.createElement('span');
-          name.className = 'guestbook-entry-name';
-          name.textContent = entry.name || (language === 'zh' ? '一位学生' : 'A student');
-
-          const time = document.createElement('time');
-          time.className = 'guestbook-entry-time';
-          time.dateTime = entry.createdAt;
-          const date = new Date(entry.createdAt);
-          time.textContent = Number.isNaN(date.getTime())
-            ? ''
-            : date.toLocaleString(language === 'zh' ? 'zh-CN' : 'en', {
-                year: 'numeric', month: 'short', day: 'numeric',
-                hour: '2-digit', minute: '2-digit'
-              });
-
-          const message = document.createElement('p');
-          message.className = 'guestbook-entry-message';
-          message.textContent = entry.message;
-
-          const remove = document.createElement('button');
-          remove.className = 'guestbook-delete';
-          remove.type = 'button';
-          remove.textContent = language === 'zh' ? '删除此留言' : 'Delete this message';
-          remove.addEventListener('click', () => {
-            const prompt = language === 'zh' ? '确定删除这条留言吗？' : 'Delete this message?';
-            if (!window.confirm(prompt)) return;
-            messages = messages.filter((item) => item.id !== entry.id);
-            saveMessages();
-            renderMessages();
-          });
-
-          footer.append(remove, time, name);
-          article.append(message, footer);
-          messagesContainer.append(article);
-        });
+        iframe.contentWindow.postMessage(
+          {
+            giscus: {
+              setConfig: {
+                lang: language === 'zh' ? 'zh-CN' : 'en'
+              }
+            }
+          },
+          'https://giscus.app'
+        );
       };
 
       const setLanguage = (language) => {
@@ -761,35 +609,11 @@
         buttons.forEach((button) => {
           button.setAttribute('aria-pressed', String(button.dataset.language === language));
         });
-        document.querySelectorAll('[data-placeholder-en]').forEach((field) => {
-          field.placeholder = field.dataset[language === 'zh' ? 'placeholderZh' : 'placeholderEn'];
-        });
-        renderMessages();
+        syncGiscusLanguage(language);
       };
 
       buttons.forEach((button) => {
         button.addEventListener('click', () => setLanguage(button.dataset.language));
-      });
-
-      form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const message = messageInput.value.trim();
-        if (!message) {
-          messageInput.focus();
-          return;
-        }
-
-        messages.unshift({
-          id: window.crypto && typeof window.crypto.randomUUID === 'function'
-            ? window.crypto.randomUUID()
-            : `${Date.now()}-${Math.random().toString(16).slice(2)}`,
-          name: nameInput.value.trim(),
-          message,
-          createdAt: new Date().toISOString()
-        });
-        saveMessages();
-        form.reset();
-        setLanguage(currentLanguage());
       });
 
       setLanguage('en');
