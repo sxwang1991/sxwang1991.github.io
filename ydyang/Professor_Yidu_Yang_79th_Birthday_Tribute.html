@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Professor Yidu Yang – 79th Birthday Tribute | 杨一都教授79岁生日纪念</title>
+  <meta name="theme-color" content="#063b70">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23063b70'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='38' fill='%23dff4ff'%3E79%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --blue-950: #031d39;
+      --blue-900: #052b52;
+      --blue-800: #063b70;
+      --blue-700: #07589e;
+      --blue-600: #0874c9;
+      --blue-200: #b9e4fb;
+      --blue-100: #dff4ff;
+      --blue-050: #f3f9fd;
+      --paper: #ffffff;
+      --ink: #10283d;
+      --muted: #526b80;
+      --rule: #d7e5ef;
+      --shadow: 0 22px 55px rgba(3, 29, 57, .15);
+      --serif: Georgia, "Noto Serif SC", "Source Han Serif SC", "Songti SC", SimSun, serif;
+      --sans: Inter, "Noto Sans SC", "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: linear-gradient(180deg, #edf7fd 0, var(--blue-050) 32rem, #f8fbfd 100%);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.82;
+    }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; }
+    a { color: var(--blue-700); text-underline-offset: .24em; overflow-wrap: anywhere; }
+    a:hover { color: var(--blue-600); }
+    a:focus-visible, button:focus-visible { outline: 3px solid #69c7f2; outline-offset: 4px; }
+    ::selection { background: var(--blue-200); color: var(--blue-950); }
+    .wrap { width: min(1120px, calc(100% - 5rem)); margin-inline: auto; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(3, 29, 57, .94);
+      color: white;
+      border-bottom: 1px solid rgba(223, 244, 255, .18);
+      backdrop-filter: blur(14px);
+    }
+    .header-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 2rem;
+    }
+    .language-switch {
+      display: inline-flex;
+      gap: 3px;
+      padding: 4px;
+      border: 1px solid rgba(223, 244, 255, .38);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .06);
+    }
+    .language-switch button {
+      cursor: pointer;
+      border: 0;
+      border-radius: 999px;
+      padding: .42rem .86rem;
+      color: #d8ecf8;
+      background: transparent;
+      font-size: .875rem;
+      font-weight: 650;
+      white-space: nowrap;
+    }
+    .language-switch button[aria-pressed="true"] {
+      background: white;
+      color: var(--blue-900);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, .14);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      color: white;
+      background:
+        radial-gradient(circle at 82% 18%, rgba(116, 207, 248, .26), transparent 28rem),
+        radial-gradient(circle at 7% 92%, rgba(63, 156, 211, .25), transparent 24rem),
+        linear-gradient(124deg, var(--blue-950) 0%, var(--blue-800) 55%, #0871b8 100%);
+      padding: 5.2rem 0 5.6rem;
+    }
+    .hero::after {
+      content: "79";
+      position: absolute;
+      right: clamp(1rem, 4vw, 4rem);
+      top: 50%;
+      transform: translateY(-50%);
+      color: rgba(255, 255, 255, .055);
+      font-family: Georgia, serif;
+      font-size: clamp(13rem, 26vw, 21rem);
+      line-height: .9;
+      pointer-events: none;
+    }
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(300px, 390px);
+      gap: clamp(3rem, 7vw, 6rem);
+      align-items: center;
+    }
+    .hero h1 {
+      margin: 0;
+      max-width: 700px;
+      font-family: var(--serif);
+      font-size: clamp(2.7rem, 5vw, 4.65rem);
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    body[data-lang="zh"] .hero h1 { letter-spacing: .045em; line-height: 1.35; }
+    .motto {
+      margin: 1.7rem 0 0;
+      color: var(--blue-100);
+      font-family: var(--serif);
+      font-size: clamp(1.25rem, 2vw, 1.6rem);
+      letter-spacing: .02em;
+    }
+    body[data-lang="zh"] .motto { letter-spacing: .13em; }
+    .profile-line { margin: 2.25rem 0 0; color: #d7ebf7; font-size: .94rem; }
+    .profile-line a { color: white; text-decoration-color: rgba(255,255,255,.45); }
+    .profile-line a:hover { color: var(--blue-100); }
+    .portrait-frame {
+      position: relative;
+      margin: 0;
+      border: 1px solid rgba(255, 255, 255, .42);
+      border-radius: 8px;
+      padding: 9px;
+      background: rgba(255, 255, 255, .13);
+      box-shadow: 0 26px 70px rgba(0, 10, 25, .34);
+      transform: rotate(.7deg);
+    }
+    .portrait-frame::before {
+      content: "";
+      position: absolute;
+      inset: -13px 18px 18px -13px;
+      z-index: -1;
+      border: 1px solid rgba(185, 228, 251, .27);
+      border-radius: 8px;
+    }
+    .portrait-frame img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: 48% 50%;
+      border-radius: 3px;
+      background: #d7e7ef;
+    }
+
+    .biography { padding: 5.5rem 0 4.8rem; }
+    .prose {
+      max-width: 900px;
+      margin-inline: auto;
+      font-family: var(--serif);
+      font-size: 1.105rem;
+      line-height: 2;
+    }
+    .prose p { margin: 0 0 1.5rem; }
+    .prose p:last-child { margin-bottom: 0; }
+
+    .publications {
+      padding: 4.8rem 0 6rem;
+      border-top: 1px solid var(--rule);
+      background: rgba(255, 255, 255, .64);
+    }
+    .section-title {
+      margin: 0 0 3rem;
+      color: var(--blue-900);
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 500;
+      line-height: 1.25;
+      text-align: center;
+      letter-spacing: -.015em;
+    }
+    body[data-lang="zh"] .section-title { letter-spacing: .08em; }
+    .research-block {
+      display: grid;
+      grid-template-columns: 74px minmax(0, 1fr);
+      gap: 1.7rem;
+      margin-top: 2rem;
+      padding: 2rem;
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, .93);
+      box-shadow: 0 9px 30px rgba(16, 53, 82, .055);
+    }
+    .research-block:first-of-type { margin-top: 0; }
+    .block-number {
+      color: var(--blue-600);
+      font-family: Georgia, serif;
+      font-size: 2.5rem;
+      line-height: 1;
+      padding-top: .18rem;
+    }
+    .block-description {
+      margin: 0 0 1.7rem;
+      color: #175f8f;
+      font-family: var(--serif);
+      font-size: 1.08rem;
+      line-height: 1.85;
+    }
+    .paper-list { display: grid; gap: .8rem; }
+    .paper {
+      padding: 1.25rem 1.35rem;
+      border-left: 3px solid var(--blue-200);
+      border-radius: 0 7px 7px 0;
+      background: var(--blue-050);
+    }
+    .paper-title {
+      margin: 0;
+      color: var(--ink);
+      font-family: Georgia, var(--serif);
+      font-size: 1.01rem;
+      line-height: 1.65;
+      overflow-wrap: anywhere;
+    }
+    .source-line {
+      margin: .58rem 0 0;
+      color: var(--muted);
+      font-size: .85rem;
+      line-height: 1.65;
+      overflow-wrap: anywhere;
+    }
+    .source-line + .source-line { margin-top: .34rem; }
+    .source-line a { font-family: Arial, sans-serif; }
+    .standalone-entry {
+      margin: 0;
+      padding: .2rem 0;
+      color: #175f8f;
+      font-family: var(--serif);
+      font-size: 1.08rem;
+      line-height: 1.85;
+    }
+
+    .guestbook {
+      padding: 5.2rem 0 6rem;
+      border-top: 1px solid var(--rule);
+      background:
+        radial-gradient(circle at 8% 18%, rgba(185, 228, 251, .45), transparent 24rem),
+        linear-gradient(180deg, rgba(243, 249, 253, .86), #edf7fd);
+    }
+    .guestbook-card {
+      max-width: 900px;
+      margin-inline: auto;
+      padding: clamp(1.45rem, 4vw, 2.6rem);
+      border: 1px solid #c9deeb;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, .94);
+      box-shadow: var(--shadow);
+    }
+    .dedication {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto 2.5rem;
+      padding: 1.55rem 1.7rem 1.55rem 2rem;
+      border-left: 4px solid var(--blue-600);
+      border-radius: 0 10px 10px 0;
+      color: var(--blue-900);
+      background: var(--blue-050);
+      font-family: var(--serif);
+      font-size: clamp(1.08rem, 2vw, 1.28rem);
+      line-height: 1.9;
+    }
+    .guestbook-form { display: grid; gap: 1.15rem; }
+    .form-field { display: grid; gap: .48rem; }
+    .form-field label {
+      color: #193f5e;
+      font-weight: 700;
+      font-size: .93rem;
+    }
+    .form-field input,
+    .form-field textarea {
+      width: 100%;
+      border: 1px solid #b8d1e1;
+      border-radius: 9px;
+      padding: .78rem .9rem;
+      color: var(--ink);
+      background: white;
+      font: inherit;
+      line-height: 1.55;
+      transition: border-color .18s ease, box-shadow .18s ease;
+    }
+    .form-field textarea { min-height: 130px; resize: vertical; }
+    .form-field input:focus,
+    .form-field textarea:focus {
+      outline: none;
+      border-color: var(--blue-600);
+      box-shadow: 0 0 0 3px rgba(8, 116, 201, .14);
+    }
+    .guestbook-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .guestbook-submit {
+      cursor: pointer;
+      border: 0;
+      border-radius: 999px;
+      padding: .72rem 1.35rem;
+      color: white;
+      background: var(--blue-700);
+      font-weight: 700;
+      box-shadow: 0 8px 20px rgba(7, 88, 158, .2);
+    }
+    .guestbook-submit:hover { background: var(--blue-600); }
+    .guestbook-note {
+      margin: 0;
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.55;
+    }
+    .guestbook-messages {
+      display: grid;
+      gap: 1rem;
+      margin-top: 2.25rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--rule);
+    }
+    .guestbook-empty {
+      margin: 0;
+      padding: 1.25rem;
+      color: var(--muted);
+      text-align: center;
+      background: var(--blue-050);
+      border-radius: 9px;
+    }
+    .guestbook-entry {
+      padding: 1.15rem 1.25rem;
+      border: 1px solid var(--rule);
+      border-radius: 10px;
+      background: #fbfdff;
+    }
+    .guestbook-entry-footer {
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-end;
+      gap: .65rem;
+      margin-top: .8rem;
+    }
+    .guestbook-entry-name { color: var(--blue-900); font-weight: 750; }
+    .guestbook-entry-time { color: var(--muted); font-size: .78rem; }
+    .guestbook-entry-message {
+      margin: 0;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+    .guestbook-delete {
+      cursor: pointer;
+      margin: 0 auto 0 0;
+      padding: .22rem 0;
+      border: 0;
+      color: #667d8f;
+      background: transparent;
+      font-size: .78rem;
+      text-decoration: underline;
+      text-underline-offset: .2em;
+    }
+    .guestbook-delete:hover { color: #a02b2b; }
+
+    .lang-zh, .lang-en { display: none; }
+    body[data-lang="en"] .lang-en { display: revert; }
+    body[data-lang="zh"] .lang-zh { display: revert; }
+    body[data-lang="en"] span.lang-en, body[data-lang="zh"] span.lang-zh { display: inline; }
+
+    @media (max-width: 840px) {
+      .wrap { width: min(100% - 2.5rem, 720px); }
+      .hero { padding: 3.8rem 0 4.2rem; }
+      .hero-grid { grid-template-columns: 1fr 240px; gap: 2.2rem; }
+      .hero h1 { font-size: clamp(2.2rem, 7vw, 3.5rem); }
+      .portrait-frame img { aspect-ratio: 4 / 5; }
+      .research-block { grid-template-columns: 58px minmax(0, 1fr); gap: 1.15rem; padding: 1.55rem; }
+      .block-number { font-size: 2rem; }
+    }
+    @media (max-width: 620px) {
+      .wrap { width: calc(100% - 2rem); }
+      .header-inner { min-height: 68px; gap: 1rem; }
+      .language-switch button { padding: .35rem .68rem; font-size: .8rem; }
+      .hero-grid { grid-template-columns: 1fr; gap: 2.4rem; }
+      .hero h1 { font-size: clamp(2.35rem, 12vw, 3.3rem); }
+      .portrait-frame { width: min(86%, 330px); justify-self: center; transform: none; }
+      .biography { padding: 3.7rem 0 3.4rem; }
+      .prose { font-size: 1.025rem; line-height: 1.9; }
+      .publications { padding: 3.4rem 0 4.3rem; }
+      .section-title { margin-bottom: 2rem; }
+      .research-block { display: block; padding: 1.25rem 1rem; border-radius: 9px; }
+      .block-number { display: block; margin-bottom: .8rem; font-size: 1.8rem; }
+      .block-description, .standalone-entry { font-size: 1rem; }
+      .paper { padding: 1.05rem .95rem; }
+      .paper-title { font-size: .96rem; }
+      .guestbook { padding: 3.5rem 0 4rem; }
+      .guestbook-card { padding: 1.2rem; border-radius: 11px; }
+      .dedication { padding: 1.2rem 1.1rem 1.2rem 1.3rem; }
+      .guestbook-actions { align-items: stretch; }
+      .guestbook-submit { width: 100%; }
+      .guestbook-entry-footer { flex-wrap: wrap; gap: .35rem .65rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print {
+      body { background: white; color: black; font-size: 11pt; }
+      .wrap { width: 100%; }
+      .site-header { position: static; background: white; color: black; border-bottom: 1px solid #bbb; }
+      .header-inner { min-height: 0; padding: .6rem 0; }
+      .language-switch { display: none; }
+      .hero { color: black; background: white; padding: 1.2rem 0 2rem; }
+      .hero::after, .portrait-frame::before { display: none; }
+      .hero-grid { grid-template-columns: 1fr 180px; gap: 1.5rem; }
+      .hero h1, .motto, .profile-line, .profile-line a { color: black; }
+      .portrait-frame { padding: 4px; box-shadow: none; border-color: #aaa; transform: none; }
+      .biography, .publications { padding: 1.5rem 0; background: white; }
+      .research-block { break-inside: avoid; box-shadow: none; padding: 1rem; margin-top: 1rem; }
+      .paper { break-inside: avoid; }
+      .guestbook { padding: 1.5rem 0; background: white; }
+      .guestbook-card { border: 0; box-shadow: none; padding: 0; }
+      .guestbook-form, .guestbook-note, .guestbook-delete { display: none !important; }
+      .guestbook-entry { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body data-lang="en">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="language-switch" role="group" aria-label="Language">
+        <button type="button" data-language="en" aria-pressed="true" lang="en">English</button>
+        <button type="button" data-language="zh" aria-pressed="false" lang="zh-CN">中文</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>
+            <span class="lang-en">Professor Yidu Yang – 79th Birthday Tribute</span>
+            <span class="lang-zh" lang="zh-CN">杨一都教授79岁生日纪念</span>
+          </h1>
+          <p class="motto">
+            <span class="lang-zh" lang="zh-CN">扎根黔中，执着一事</span>
+            <span class="lang-en">Rooted in Guizhou, Devoted to One Pursuit</span>
+          </p>
+          <p class="profile-line">
+            ResearchGate<span class="lang-zh" lang="zh-CN">主页：</span><span class="lang-en" lang="en"> profile: </span>
+            <a href="https://www.researchgate.net/profile/Yidu-Yang-2" target="_blank" rel="noopener noreferrer">https://www.researchgate.net/profile/Yidu-Yang-2</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="biography">
+      <div class="wrap prose">
+        <div class="lang-zh" lang="zh-CN">
+          <p>杨一都教授，贵州师范大学博士生导师，享受国务院政府特殊津贴专家。1947年9月生，1977年毕业于贵州大学，1981年研究生毕业于武汉大学，获理学硕士学位，长期在贵州从事计算数学的教学与科研工作。</p>
+          <p>教学方面，杨一都教授始终将教书育人视为根本。作为第一完成人，他出版教材3本、学术专著1部，1998 年被评为贵州省优秀教师，1999 年获曾宪梓基金会高师优秀教师奖二等奖，2006年获贵州省五一劳动奖章，2012年获贵州省第八届高等教育省级教学成果奖贰等奖，同年被评为第三届贵州高校感动校园十大人物。迄今已指导毕业硕士研究生43名，毕业博士研究生9名，培养了一批活跃在大中学校教学和科研一线的骨干力量。</p>
+          <p>科研方面，他专注于偏微分方程特征值问题的数值方法研究，带领团队持续攻关。先后主持完成国家自然科学基金课题4项、贵州省科学研究课题6项。作为项目第一完成人，获贵州省科技进步奖贰等奖2项（1992、2015）、叁等奖3项（1991、1994、1997）。2015年被评为贵州省优秀科技工作者。</p>
+          <p>杨一都教授扎根贵州，培养与领导一个研究群体，专攻特征值问题有限元法，其研究成果不仅具有创新性，而且具有较重要的理论意义和工程实用价值，得到了中国科学院林群院士等同行专家学者的好评。</p>
+        </div>
+        <div class="lang-en" lang="en">
+          <p>Professor Yidu Yang, a doctoral supervisor at Guizhou Normal University and a recipient of the Special Government Allowance granted by the State Council of China, was born in September 1947. He graduated from Guizhou University in 1977 and completed his postgraduate studies at Wuhan University in 1981, earning a Master of Science degree. He has long been engaged in teaching and research in computational mathematics in Guizhou.</p>
+          <p>In teaching, Professor Yidu Yang has always regarded teaching and nurturing students as his fundamental responsibility. As the lead author, he has published three textbooks and one academic monograph. In 1998, he was named an Outstanding Teacher of Guizhou Province; in 1999, he received the Second Prize of the Zeng Xianzi Foundation Award for Outstanding Teachers at Higher Normal Universities; in 2006, he was awarded the Guizhou Provincial May 1 Labor Medal; and in 2012, he received the Second Prize of the Eighth Guizhou Provincial Higher Education Teaching Achievement Award. In the same year, he was named one of the ten most inspirational campus figures at Guizhou universities in the third provincial selection. To date, he has supervised 43 master’s students and 9 doctoral students to completion, cultivating a group of key professionals active in teaching and research at universities and secondary schools.</p>
+          <p>In research, he has focused on numerical methods for eigenvalue problems of partial differential equations and has led his team in sustained research efforts. He has led and completed four projects funded by the National Natural Science Foundation of China and six scientific research projects funded by Guizhou Province. As the lead contributor, he received two Second Prizes (1992 and 2015) and three Third Prizes (1991, 1994, and 1997) of the Guizhou Provincial Science and Technology Progress Award. In 2015, he was named an Outstanding Science and Technology Worker of Guizhou Province.</p>
+          <p>Based in Guizhou, Professor Yidu Yang has cultivated and led a research group specializing in finite element methods for eigenvalue problems. His research achievements are not only innovative but also possess significant theoretical importance and practical engineering value. They have been well regarded by experts and scholars in the field, including Academician Qun Lin of the Chinese Academy of Sciences.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="publications">
+      <div class="wrap">
+        <h2 class="section-title">
+          <span class="lang-zh" lang="zh-CN">部分代表论著</span>
+          <span class="lang-en">Selected Representative Publications</span>
+        </h2>
+
+        <article class="research-block">
+          <span class="block-number" aria-hidden="true">1.</span>
+          <div>
+            <p class="block-description lang-zh" lang="zh-CN">与林群教授、张智民教授等合作研究特征值问题非协调元逼近的先验误差估计及近似特征值的渐近下界逼近性质</p>
+            <p class="block-description lang-en" lang="en">In collaboration with Professor Qun Lin, Professor Zhimin Zhang, and others, he studied a priori error estimates for nonconforming finite element approximations of eigenvalue problems and the asymptotic lower-bound property of the approximate eigenvalues.</p>
+            <div class="paper-list">
+              <section class="paper">
+                <p class="paper-title">[1] 2000-JCM-A posteriori error estimates in Adini finite element for eigenvalue problems</p>
+                <p class="source-line"><span class="lang-zh" lang="zh-CN">DOI链接: </span><span class="lang-en" lang="en">DOI link: </span><a href="https://global-sci.com/JCM/article/view/11377" target="_blank" rel="noopener noreferrer">https://global-sci.com/JCM/article/view/11377</a></p>
+              </section>
+              <section class="paper">
+                <p class="paper-title">[2] 2009-APNUM-Nonconforming finite element approximations of the Steklov eigenvalue problem</p>
+                <p class="source-line"><span class="lang-zh" lang="zh-CN">DOI链接:</span><span class="lang-en" lang="en">DOI link: </span><a href="https://doi.org/10.1016/j.apnum.2009.04.005" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.apnum.2009.04.005</a></p>
+              </section>
+              <section class="paper">
+                <p class="paper-title">[3] 2010-Sci China-Eigenvalue approximation from below using non-conforming finite elements</p>
+                <p class="source-line"><span class="lang-zh" lang="zh-CN">DOI链接: </span><span class="lang-en" lang="en">DOI link: </span><a href="https://doi.org/10.1007/s11425-009-0198-0" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/s11425-009-0198-0</p>
+                <p class="source-line">Semantic Scholar: <a href="https://www.semanticscholar.org/" target="_blank" rel="noopener noreferrer">https://www.semanticscholar.org/</a>paper/Eigenvalue–approximation-from-below-using-finite-Yang-Zhang/ 5a988c0cc0880aab893e4f300421f4df59492c95</p>
+              </section>
+              <section class="paper">
+                <p class="paper-title">[4]2012-Adv Comput Math-Eigenvalue approximations from below using Morley elements</p>
+                <p class="source-line"><span class="lang-zh" lang="zh-CN">DOI链接:</span><span class="lang-en" lang="en">DOI link: </span><a href="https://doi.org/10.1007/s10444-011-9185-4" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/s10444-011-9185-4</a></p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-block">
+          <span class="block-number" aria-hidden="true">2.</span>
+          <div>
+            <p class="block-description lang-zh" lang="zh-CN">与闭海教授、李思锐博士合作研究微分算子特征值的有限元外推，提出了一种特征值误差的新的展开式，使用该展开式研究了重特征值的有限元外推</p>
+            <p class="block-description lang-en" lang="en">In collaboration with Professor Hai Bi and Dr. Sirui Li, he studied finite element extrapolation for eigenvalues of differential operators, proposed a new expansion for eigenvalue errors, and used it to investigate finite element extrapolation for multiple eigenvalues.</p>
+            <div class="paper-list">
+              <section class="paper">
+                <p class="paper-title">[5] 2013-APNUM- The extrapolation of numerical eigenvalues by finite elements for differential operators</p>
+                <p class="source-line"><span class="lang-zh" lang="zh-CN">DOI链接：</span><span class="lang-en" lang="en">DOI link: </span><a href="https://dx.doi.org/10.1016/j.apnum.2013.03.002" target="_blank" rel="noopener noreferrer">http://dx.doi.org/10.1016/j.apnum.2013.03.002</a></p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-block">
+          <span class="block-number" aria-hidden="true">3.</span>
+          <div>
+            <p class="block-description lang-zh" lang="zh-CN">与闭海教授、韩家宇教授等合作研究特征值问题的有限元多网格离散, 提出了基于移位反迭代的二网格和多网格离散方法, 并给出了该方法严格的理论分析</p>
+            <p class="block-description lang-en" lang="en">In collaboration with Professor Hai Bi, Professor Jiayu Han, and others, he studied finite element multigrid discretizations of eigenvalue problems, proposed two-grid and multigrid methods based on shifted inverse iteration, and provided a rigorous theoretical analysis of these methods.</p>
+            <div class="paper-list">
+              <section class="paper">
+                <p class="paper-title">[6] 1988-<span class="lang-zh" lang="zh-CN">逆幂伽略金法（贵州大学学报（自然科学））</span><span class="lang-en" lang="en">Journal of Guizhou University (Natural Science)—The Inverse-Power Galerkin Method (in Chinese)</span></p>
+                <p class="source-line">DOI: 10.15958/j.cnki.gdxbzrb.1988.01.006</p>
+              </section>
+              <section class="paper">
+                <p class="paper-title">[7] 2011-SINUM-Two grid finite element discretization schemes based on shifted-inverse power method for elliptic eigenvalue problems</p>
+                <p class="source-line"><span class="lang-zh" lang="zh-CN">DOI链接: </span><span class="lang-en" lang="en">DOI link: </span><a href="https://doi.org/10.1137/100810241" target="_blank" rel="noopener noreferrer">https://doi.org/10.1137/100810241</a></p>
+                <p class="source-line"><a href="https://www.semanticscholar.org/paper/9707b2df018c842b78c2d2c7d173df6318d50550" target="_blank" rel="noopener noreferrer">https://www.semanticscholar.org/paper/9707b2df018c842b78c2d2c7d173df6318d50550</a></p>
+              </section>
+              <section class="paper">
+                <p class="paper-title">[8]2015-SISC-The shifted-inverse iteration based on the multigrid discretizations for eigenvalue problems</p>
+                <p class="source-line"><span class="lang-zh" lang="zh-CN">DOI链接: </span><span class="lang-en" lang="en">DOI link: </span><a href="https://doi.org/10.1137/140992011" target="_blank" rel="noopener noreferrer">https://doi.org/10.1137/140992011</a></p>
+                <p class="source-line">Semantic Scholar: <a href="https://www.semanticscholar.org/paper/" target="_blank" rel="noopener noreferrer">https://www.semanticscholar.org/paper/</a>...</p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-block">
+          <span class="block-number" aria-hidden="true">4.</span>
+          <div>
+            <p class="block-description lang-zh" lang="zh-CN">与闭海教授、韩家宇教授等合作研究Helmholtz传输特征值问题和弹性传输特征值问题的有限元逼近</p>
+            <p class="block-description lang-en" lang="en">In collaboration with Professor Hai Bi, Professor Jiayu Han, and others, he studied finite element approximations of the Helmholtz transmission eigenvalue problem and the elastic transmission eigenvalue problem.</p>
+            <div class="paper-list">
+              <section class="paper">
+                <p class="paper-title">[9]2016-CMAME-Non-conforming finite element methods for transmission eigenvalue problem</p>
+                <p class="source-line"><span class="lang-zh" lang="zh-CN">DOI链接: </span><span class="lang-en" lang="en">DOI link: </span><a href="https://doi.org/10.1016/j.cma.2016.04.021" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.cma.2016.04.021</a></p>
+              </section>
+              <section class="paper">
+                <p class="paper-title">[10]2016-SISC-Mixed methods for the Helmholtz transmission eigenvalues</p>
+                <p class="source-line"><span class="lang-zh" lang="zh-CN">DOI链接: </span><span class="lang-en" lang="en">DOI link: </span><a href="https://doi.org/10.1137/15M1040110" target="_blank" rel="noopener noreferrer">https://doi.org/10.1137/15M1040110</a></p>
+              </section>
+              <section class="paper">
+                <p class="paper-title">[11]2017-JCAM-A C<sup>0</sup>IPG method and its error estimates for the Helmholtz transmission eigenvalue problem</p>
+                <p class="source-line"><span class="lang-zh" lang="zh-CN">DOI链接:</span><span class="lang-en" lang="en">DOI link: </span><a href="https://dx.doi.org/10.1016/j.cam.2017.04.024" target="_blank" rel="noopener noreferrer">http://dx.doi.org/10.1016/j.cam.2017.04.024</a></p>
+              </section>
+              <section class="paper">
+                <p class="paper-title">[12]2020-CMAME-A type of adaptive C<sup>0</sup> non-conforming finite element method for Helmholtz transmission eigenvalue problem</p>
+                <p class="source-line"><span class="lang-zh" lang="zh-CN">DOI链接: </span><span class="lang-en" lang="en">DOI link: </span><a href="https://doi.org/10.1016/j.cma.2019.112697" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.cma.2019.112697</a></p>
+              </section>
+              <section class="paper">
+                <p class="paper-title">[13] 2020-Commun. Comput. Phys.-H<sup>2</sup>-conforming methods and two-grid discretizations for the elastic transmission eigenvalue problem</p>
+                <p class="source-line"><span class="lang-zh" lang="zh-CN">DOI链接: </span><span class="lang-en" lang="en">DOI link: </span><a href="https://global-sci.com/cicp/article/view/6883" target="_blank" rel="noopener noreferrer">https://global-sci.com/cicp/article/view/6883</a></p>
+              </section>
+              <section class="paper">
+                <p class="paper-title">[14]2022-JSC-The finite element method for the elastic transmission eigenvalue problem with different elastic tensors</p>
+                <p class="source-line"><span class="lang-zh" lang="zh-CN">DOI链接: </span><span class="lang-en" lang="en">DOI link: </span><a href="https://doi.org/10.1007/s10915-022-02030-3" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/s10915-022-02030-3</a></p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-block">
+          <span class="block-number" aria-hidden="true">5.</span>
+          <div>
+            <p class="block-description lang-zh" lang="zh-CN">与闭海教授、王世喜博士合作研究谱问题的伽辽金方法后验误差估计, 提出了一种新的后验误差分析方法, 填补了带亏损特征值的谱问题的有限元后验误差估计这个空白</p>
+            <p class="block-description lang-en" lang="en">In collaboration with Professor Hai Bi and Dr. Shixi Wang, he studied a posteriori error estimates for the Galerkin method applied to spectral problems and proposed a new approach to a posteriori error analysis, filling a gap in finite element a posteriori error estimation for spectral problems involving defective eigenvalues.</p>
+            <div class="paper-list">
+              <section class="paper">
+                <p class="paper-title">[15]2024-SINUM-The a posteriori error estimates of the FE approximation of defective eigenvalues for non-self-adjoint eigenvalue problems</p>
+                <p class="source-line"><span class="lang-zh" lang="zh-CN">DOI链接: </span><span class="lang-en" lang="en">DOI link: </span><a href="https://doi.org/10.1137/23M162065X" target="_blank" rel="noopener noreferrer">https://doi.org/10.1137/23M162065X</a></p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-block">
+          <span class="block-number" aria-hidden="true">6.</span>
+          <div>
+            <p class="standalone-entry lang-zh" lang="zh-CN">与闭海教授、王世喜博士合作编著教材&lt;&lt;数值计算方法(第二版)&gt;&gt;高等教育出版社, 2024</p>
+            <p class="standalone-entry lang-en" lang="en">He co-authored the Chinese-language textbook <em>Numerical Computation Method</em> (Second Edition) with Professor Hai Bi and Dr. Shixi Wang (Higher Education Press, 2024).</p>
+          </div>
+        </article>
+
+        <article class="research-block">
+          <span class="block-number" aria-hidden="true">7.</span>
+          <div>
+            <p class="standalone-entry lang-zh" lang="zh-CN">出版专著&lt;&lt;特征值问题有限元方法&gt;&gt;, 科学出版社, 2012</p>
+            <p class="standalone-entry lang-en" lang="en">He published the Chinese-language monograph <em>Finite Element Methods for Eigenvalue Problems</em> (Science Press, 2012).</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="guestbook" aria-labelledby="guestbook-title">
+      <div class="wrap">
+        <p class="dedication">
+          <span class="lang-zh" lang="zh-CN">值此杨一都教授七十九岁生日之际，我们谨以此文，向导师致以最诚挚的敬意与祝福。</span>
+          <span class="lang-en" lang="en">On the occasion of Professor Yidu Yang’s seventy-ninth birthday, we respectfully offer this tribute, together with our sincerest respect and best wishes to our mentor.</span>
+        </p>
+        <h2 class="section-title" id="guestbook-title">
+          <span class="lang-zh" lang="zh-CN">留言板</span>
+          <span class="lang-en" lang="en">Guestbook</span>
+        </h2>
+        <div class="guestbook-card">
+          <form class="guestbook-form" id="guestbook-form">
+            <div class="form-field">
+              <label for="guestbook-message">
+                <span class="lang-zh" lang="zh-CN">留言</span>
+                <span class="lang-en" lang="en">Message</span>
+              </label>
+              <textarea id="guestbook-message" name="message" maxlength="600" required data-placeholder-en="Write your birthday wishes here…" data-placeholder-zh="请在这里写下您的生日祝福……"></textarea>
+            </div>
+            <div class="form-field">
+              <label for="guestbook-name">
+                <span class="lang-zh" lang="zh-CN">姓名（选填）</span>
+                <span class="lang-en" lang="en">Name (optional)</span>
+              </label>
+              <input id="guestbook-name" name="name" type="text" maxlength="60" autocomplete="name" data-placeholder-en="Your name" data-placeholder-zh="您的姓名">
+            </div>
+            <div class="guestbook-actions">
+              <button class="guestbook-submit" type="submit">
+                <span class="lang-zh" lang="zh-CN">提交留言</span>
+                <span class="lang-en" lang="en">Post Message</span>
+              </button>
+              <p class="guestbook-note">
+                <span class="lang-zh" lang="zh-CN">离线说明：留言仅保存在当前浏览器中，不会上传网络。</span>
+                <span class="lang-en" lang="en">Offline note: Messages are stored only in this browser and are not uploaded.</span>
+              </p>
+            </div>
+          </form>
+
+          <div class="guestbook-messages" id="guestbook-messages" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (() => {
+      const STORAGE_KEY = 'yidu-yang-79-guestbook-v1';
+      const buttons = Array.from(document.querySelectorAll('[data-language]'));
+      const form = document.getElementById('guestbook-form');
+      const nameInput = document.getElementById('guestbook-name');
+      const messageInput = document.getElementById('guestbook-message');
+      const messagesContainer = document.getElementById('guestbook-messages');
+
+      const loadMessages = () => {
+        try {
+          const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+          return Array.isArray(stored) ? stored : [];
+        } catch (error) {
+          return [];
+        }
+      };
+
+      let messages = loadMessages();
+
+      const saveMessages = () => {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(messages));
+        } catch (error) {
+          // The guestbook still works for the current page session if storage is unavailable.
+        }
+      };
+
+      const currentLanguage = () => document.body.dataset.lang === 'zh' ? 'zh' : 'en';
+
+      const renderMessages = () => {
+        const language = currentLanguage();
+        messagesContainer.replaceChildren();
+
+        if (messages.length === 0) {
+          const empty = document.createElement('p');
+          empty.className = 'guestbook-empty';
+          empty.lang = language === 'zh' ? 'zh-CN' : 'en';
+          empty.textContent = language === 'zh'
+            ? '尚无留言，期待您的祝福。'
+            : 'No messages yet—your wishes are welcome.';
+          messagesContainer.append(empty);
+          return;
+        }
+
+        messages.forEach((entry) => {
+          const article = document.createElement('article');
+          article.className = 'guestbook-entry';
+
+          const footer = document.createElement('div');
+          footer.className = 'guestbook-entry-footer';
+
+          const name = document.createElement('span');
+          name.className = 'guestbook-entry-name';
+          name.textContent = entry.name || (language === 'zh' ? '一位学生' : 'A student');
+
+          const time = document.createElement('time');
+          time.className = 'guestbook-entry-time';
+          time.dateTime = entry.createdAt;
+          const date = new Date(entry.createdAt);
+          time.textContent = Number.isNaN(date.getTime())
+            ? ''
+            : date.toLocaleString(language === 'zh' ? 'zh-CN' : 'en', {
+                year: 'numeric', month: 'short', day: 'numeric',
+                hour: '2-digit', minute: '2-digit'
+              });
+
+          const message = document.createElement('p');
+          message.className = 'guestbook-entry-message';
+          message.textContent = entry.message;
+
+          const remove = document.createElement('button');
+          remove.className = 'guestbook-delete';
+          remove.type = 'button';
+          remove.textContent = language === 'zh' ? '删除此留言' : 'Delete this message';
+          remove.addEventListener('click', () => {
+            const prompt = language === 'zh' ? '确定删除这条留言吗？' : 'Delete this message?';
+            if (!window.confirm(prompt)) return;
+            messages = messages.filter((item) => item.id !== entry.id);
+            saveMessages();
+            renderMessages();
+          });
+
+          footer.append(remove, time, name);
+          article.append(message, footer);
+          messagesContainer.append(article);
+        });
+      };
+
+      const setLanguage = (language) => {
+        if (language !== 'en' && language !== 'zh') return;
+        document.body.dataset.lang = language;
+        document.documentElement.lang = language === 'en' ? 'en' : 'zh-CN';
+        buttons.forEach((button) => {
+          button.setAttribute('aria-pressed', String(button.dataset.language === language));
+        });
+        document.querySelectorAll('[data-placeholder-en]').forEach((field) => {
+          field.placeholder = field.dataset[language === 'zh' ? 'placeholderZh' : 'placeholderEn'];
+        });
+        renderMessages();
+      };
+
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => setLanguage(button.dataset.language));
+      });
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const message = messageInput.value.trim();
+        if (!message) {
+          messageInput.focus();
+          return;
+        }
+
+        messages.unshift({
+          id: window.crypto && typeof window.crypto.randomUUID === 'function'
+            ? window.crypto.randomUUID()
+            : `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+          name: nameInput.value.trim(),
+          message,
+          createdAt: new Date().toISOString()
+        });
+        saveMessages();
+        form.reset();
+        setLanguage(currentLanguage());
+      });
+
+      setLanguage('en');
+    })();
+  </script>
+</body>
+</html>
